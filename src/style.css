@@ -39,6 +39,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #213547;
+  color: white;
 }
 
 h1 {
@@ -87,4 +89,20 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+#header {
+  height: 40px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background-color: #0e1035;
+}
+
+#footer {
+  height: 30px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  background-color: #0e1035;
 }
