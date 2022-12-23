@@ -129,6 +129,10 @@ button:focus-visible {
   background-color: #2e3138;
 }
 
+.node-editor {
+  width: 100% !important;
+}
+
 /* .splitpanes */
 
 .splitpanes {

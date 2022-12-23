@@ -4,6 +4,7 @@
 import HelloWorld from './components/HelloWorld.vue';
 import { Splitpanes, Pane } from 'splitpanes';
 import 'splitpanes/dist/splitpanes.css';
+import ModulesExample from './components/ModulesExample.vue';
 </script>
 
 <template>
@@ -16,7 +17,7 @@ import 'splitpanes/dist/splitpanes.css';
     </pane>
     <pane min-size="5">
       <splitpanes horizontal>
-        <pane>Nodes<HelloWorld msg="Vite + Vue" /></pane>
+        <pane><ModulesExample /><!--<HelloWorld msg="Vite + Vue" />--></pane>
         <pane size="20" min-size="5" max-size="50">Console</pane>
       </splitpanes>
     </pane>
