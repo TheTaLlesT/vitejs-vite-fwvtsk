@@ -36,8 +36,6 @@ a:hover {
 body {
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
   color: white;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -51,12 +49,14 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  border: 0;
   background-color: #000000;
 }
 
 table.toptable {
   height: 100%;
   width: 100%;
+  border-collapse: collapse;
 }
 
 td.toptable {
@@ -99,6 +99,7 @@ button:focus-visible {
   padding: 2rem;*/
   text-align: center;
   height: 100%;
+  background-color: #202327;
 }
 
 @media (prefers-color-scheme: light) {
@@ -118,14 +119,14 @@ button:focus-visible {
   height: 40px;
   width: 100%;
   top: 0;
-  background-color: #0e1035;
+  background-color: #2e3138;
 }
 
 #footer {
   height: 30px;
   width: 100%;
   bottom: 0;
-  background-color: #0e1035;
+  background-color: #2e3138;
 }
 
 /* .splitpanes */
@@ -173,7 +174,7 @@ button:focus-visible {
   background-color: inherit;
 }
 .splitpanes.transparent-theme .splitpanes__splitter {
-  background-color: #fff;
+  background-color: #2e3138;
   box-sizing: border-box;
   position: relative;
   flex-shrink: 0;
@@ -200,7 +201,7 @@ button:focus-visible {
 .transparent-theme.splitpanes--vertical > .splitpanes__splitter,
 .transparent-theme .splitpanes--vertical > .splitpanes__splitter {
   width: 7px;
-  border-left: 1px solid #eee;
+  border-left: 1px solid black;
   margin-left: -1px;
 }
 .transparent-theme.splitpanes--vertical > .splitpanes__splitter:before,
@@ -222,7 +223,7 @@ button:focus-visible {
 .transparent-theme.splitpanes--horizontal > .splitpanes__splitter,
 .transparent-theme .splitpanes--horizontal > .splitpanes__splitter {
   height: 7px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid black;
   margin-top: -1px;
 }
 .transparent-theme.splitpanes--horizontal > .splitpanes__splitter:before,
