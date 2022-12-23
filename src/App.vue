@@ -7,17 +7,22 @@ import 'splitpanes/dist/splitpanes.css';
 </script>
 
 <template>
-  <splitpanes id="devmain" class="default-theme">
-    <pane>
+  <splitpanes id="devmain" class="transparent-theme">
+    <pane size="20" min-size="5" max-size="50">
       <a href="https://vuejs.org/" target="_blank">
+        Naviagtion
         <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
       </a>
     </pane>
-    <pane>
-      <HelloWorld msg="Vite + Vue" />
+    <pane min-size="5">
+      <splitpanes horizontal>
+        <pane>Nodes<HelloWorld msg="Vite + Vue" /></pane>
+        <pane size="20" min-size="5" max-size="50">Console</pane>
+      </splitpanes>
     </pane>
-    <pane>
+    <pane size="20" min-size="5" max-size="50">
       <a href="https://vitejs.dev" target="_blank">
+        Properties
         <img src="/vite.svg" class="logo" alt="Vite logo" />
       </a>
     </pane>
